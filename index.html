@@ -1,61 +1,183 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Leonardo - Desenvolvedor Frontend</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portfólio — Leonardo</title>
+  <meta name="description" content="Portfólio minimalista de desenvolvedor de software">
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  
+
 </head>
 <body>
+  <a class="skip-link" href="#sobre">Pular para o conteúdo</a>
+  <div class="container" role="main">
     <header>
-        <h1>Leonardo Oliveira - Desenvolvedor Frontend</h1>
-            <p>Transformando ideias em interfaces incríveis</p>
-    </header>
-
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-            <p>Sou um desenvolvedor frontend apaixonado por criar experiências digitais modernas, responsivas e acessíveis. Trabalho com HTML, CSS, JavaScript e frameworks como React.</p>
-    </section>
-
-    <section id="projetos">
-        <h2>Meus Projetos</h2>
-        <div class="projetos">
-            <div class="projeto">
-                <h3>Portfólio Pessoal</h3>
-                    <p>Site responsivo com animações e dark mode.</p>
-            </div>
-            <div class="projeto">
-                <h3>Dashboard de Vendas</h3>
-                    <p>Aplicação com gráficos interativos usando Chart.js.</p>
-            </div>
-            <div class="projeto">
-                <h3>Clone do Netflix</h3>
-                <p>Interface com carrossel de filmes e integração com API.</p>
+        <div class="brand">
+            <!--<div class="logo">L</div>-->
+            <div>
+                <h1>Leonardo Oliveira — Desenvolvedor de Software</h1>
+                <p class="lead"></p>
+                <img width="30" height="30" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/>
+                <img width="30" height="30" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>
+                <img width="30" height="30" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>
+                <img width="30" height="30" src="https://img.icons8.com/color/48/python--v1.png" alt="python--v1"/>
             </div>
         </div>
-    </section>
+      
+      
+      <!--<nav aria-label="links">
+        <a class="icon-btn" href="#projetos" title="Projetos">Projetos</a>
+        <a class="icon-btn" href="#contato" title="Contato">Contato</a>
+      </nav>-->
+    </header>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <form action="https://formspree.io/f/xzzyborp" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required />
+    <main>
+      <section class="profile" id="sobre">
+        <!--<div class="avatar" role="img" aria-label="Avatar de Leonardo">L</div>-->
+        <div class="bio">
+            <h2>Olá, eu sou o Leonardo</h2>
+            <p>Cursando Análise e Desenvolvimento de Sistemas na Faculdade Senac DF, com MBA em Finanças pela Descomplica Faculdade Digital. Minha trajetória acadêmica e profissional reflete uma combinação estratégica entre competências financeiras e tecnológicas.</p><br>
+            <p>Desde setembro de 2025, atuo como estagiário na Controladoria-Geral do Distrito Federal, na Subcontroladoria de Transparência e Controle Social. Colaboro com a gestão dos sites institucionais, apoiando na organização de conteúdo, aprimoramento visual e funcional dos layouts, além da manutenção e evolução das plataformas digitais.</p><br>
+            <p>Meu objetivo é integrar conhecimentos técnicos e financeiros para contribuir em projetos que promovam inovação tecnológica e resultados consistentes. Com habilidades em Python e programação lógica, almejo unir minha formação em tecnologia com minha experiência prévia em finanças para resolver desafios de forma criativa e eficiente.</p>
+        </div>
+      </section>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+      <section class="projects" id="projetos">
+        <h2 style="margin:0 0 10px 0">Projetos recentes</h2>
 
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
-            <button type="submit">Enviar</button>
-        </form>
-    
-    </section>
+        <div class="projects-grid">
+          <!-- Aplicar projetos feitos -->  
+          <article class="card">
+            <h3>Dashboard Analytics</h3>
+            <p>SPA em React com integração a APIs e visualizações em D3 para monitoramento em tempo real.</p>
+            <div class="tags">
+              <span class="tag">React</span><span class="tag">D3</span><span class="tag">Node.js</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>API de Autenticação</h3>
+            <p>Microserviço RESTful com JWT, testes e deploy containerizado para autenticação centralizada.</p>
+            <div class="tags">
+              <span class="tag">Express</span><span class="tag">Docker</span><span class="tag">Postgres</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Aplicativo PWA</h3>
+            <p>Progressive Web App com cache inteligente, notificações e offline-first para campo.</p>
+            <div class="tags">
+              <span class="tag">PWA</span><span class="tag">Service Worker</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Automação de Deploy</h3>
+            <p>Pipeline CI/CD com testes automatizados, análise estática e deploy canário.</p>
+            <div class="tags">
+              <span class="tag">CI/CD</span><span class="tag">GitHub Actions</span>
+            </div>
+          </article>
+        </div>
+
+        <!--<p class="cta">Quer ver mais? Confira meu GitHub e LinkedIn na barra lateral.</p>-->
+      </section>
+    </main>
+
+    <aside>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <div>
+          <strong style="font-size:15px">Contato</strong>
+          <div style="color:var(--muted);font-size:13px">Envie uma mensagem rápida</div>
+        </div>
+        <!--<div style="font-size:12px;color:var(--muted)">Disponível</div>-->
+      </div>
+
+      <form id="contactForm" class="contact-box" action="https://formspree.io/f/xzzyborp" method="POST">
+        <label for="name">Nome</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="hidden" name="_subject" value="Novo contato do portfólio" />
+        <button class="btn" type="submit">Enviar</button>
+
+        <div id="formStatus"></div>
+
+        <noscript>
+          <p style="color:var(--muted);font-size:13px;margin-top:6px">
+            JavaScript está desativado. Envie um e‑mail para
+            <a href="mailto:seu@email.com" style="color:var(--accent)">seu@email.com</a>
+          </p>
+        </noscript>
+      </form>
+
+      <div style="margin-top:14px">
+        <strong style="font-size:13px">Redes</strong>
+        <div class="socials" aria-hidden="false">
+          <a class="icon-btn" href="https://www.linkedin.com/in/leonardo-oliveira" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <!-- LinkedIn SVG -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6C1.1 6 0 4.88 0 3.5C0 2.12 1.12 1 2.5 1C3.88 1 4.98 2.12 4.98 3.5ZM0.22 8.98H4.78V24H0.22V8.98ZM8.5 8.98H13.06V11.3C13.88 9.76 16 8.9 18.38 8.9C23.02 8.9 24 11.76 24 16.1V24H19.44V16.96C19.44 15.2 18.98 13.86 16.92 13.86C14.82 13.86 14.28 15.44 14.28 16.84V24H9.72V8.98H8.5Z" fill="currentColor"/>
+            </svg>
+          </a>
+
+          <a class="icon-btn" href="https://github.com/Leonardo2891" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <!-- GitHub SVG -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 .5C5.73.5.9 5.34.9 11.61c0 4.72 3.06 8.72 7.31 10.13.53.1.72-.23.72-.51 0-.25-.01-.92-.01-1.8-2.97.64-3.6-1.41-3.6-1.41-.49-1.26-1.2-1.6-1.2-1.6-.98-.68.07-.67.07-.67 1.08.08 1.65 1.12 1.65 1.12.96 1.65 2.52 1.17 3.14.89.1-.7.38-1.17.69-1.44-2.37-.27-4.87-1.19-4.87-5.32 0-1.18.42-2.15 1.11-2.91-.11-.27-.48-1.36.11-2.84 0 0 .9-.29 2.95 1.1a10.21 10.21 0 0 1 2.69-.36c.91.01 1.83.12 2.69.36 2.05-1.39 2.95-1.1 2.95-1.1.59 1.48.22 2.57.11 2.84.69.76 1.11 1.73 1.11 2.91 0 4.14-2.51 5.04-4.89 5.31.39.34.74 1.01.74 2.04 0 1.47-.01 2.65-.01 3.01 0 .28.19.62.73.51 4.25-1.42 7.31-5.4 7.31-10.13C23.1 5.34 18.27.5 12 .5z" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </aside>
 
     <footer>
-        <p>&copy; Leonardo Oliveira - Direitos Reservados.</p>
+      <div>© <strong>Leonardo</strong> — Desenvolvedor de Software</div>
     </footer>
+  </div>
+
+  <script>
+    (function(){
+      const form = document.getElementById('contactForm');
+      const status = document.getElementById('formStatus');
+
+      form.addEventListener('submit', async function(e){
+        e.preventDefault();
+        status.style.color = 'var(--muted)';
+        status.textContent = 'Enviando...';
+        const data = new FormData(form);
+        try{
+          const resp = await fetch(form.action, {
+            method: form.method,
+            headers: { 'Accept': 'application/json' },
+            body: data
+          });
+          if (resp.ok){
+            form.reset();
+            status.style.color = 'var(--accent)';
+            status.textContent = 'Mensagem enviada, obrigado!';
+          } else {
+            // tenta ler JSON, caso não seja JSON, exibe mensagem genérica
+            let errorText = 'Ocorreu um erro ao enviar. Verifique o endpoint.';
+            try{
+              const json = await resp.json();
+              errorText = json.error || json.message || errorText;
+            }catch(_){ /* mantém mensagem genérica */ }
+            status.style.color = '#f97373';
+            status.textContent = errorText;
+          }
+        }catch(err){
+          status.style.color = '#f97373';
+          status.textContent = 'Erro de rede ao enviar a mensagem.';
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
